@@ -1,6 +1,22 @@
 ---
 layout: default
 title: prug.pl
+comments: false
 ---
 
-Hello world
+Co?
+---
+
+Nieformalne spotkania Poznan Ruby User Group
+
+Gdzie?
+------
+
+Woźna 9C/2, Poznań, drugie piętro, na domofonie "Humanway"
+
+Kiedy?
+------
+
+Każdy 4-ty czwartek miesiąca. Najbliższe spotkanie:
+
+24 marca 2011 g. 17:00

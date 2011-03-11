@@ -26,6 +26,7 @@
         <div id="content">
           {{ content }}
 
+          {% if page.comments %}
           <div id="disqus_thread"></div>
           <script type="text/javascript">
               var disqus_shortname = 'prug'; // required: replace example with your forum shortname
@@ -40,11 +41,24 @@
                   (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
               })();
           </script>
+          {% endif %}
           
         </div>
         <div id="sidebar">
           <div class="item">
-            Sidebar stuff ;)
+            <h3>prug elsewhere</h3>
+            <ul>
+              <li>Github</li>
+              <li>Twitter</li>
+              <li>Facebook</li>
+            </ul>
+          </div>
+          <div class="item">
+            <h3>Sponsorzy</h3>
+            <ul>
+              <li>Venue: netguru</li>
+              <li>Trunki: netguru</li>
+            </ul>
           </div>
         </div>
       </div>
