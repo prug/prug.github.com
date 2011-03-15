@@ -19,4 +19,4 @@ Kiedy?
 
 Każdy 4-ty czwartek miesiąca. Najbliższe spotkanie:
 
-24 marca 2011 g. 17:00
+24 marca 2011 g. 19:00
