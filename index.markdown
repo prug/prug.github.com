@@ -21,7 +21,15 @@ Każdy 4-ty czwartek miesiąca.
 
 Najbliższe spotkanie:
 -----------------------
+**Data:** 28 kwietnia, g. 19:00
 
+**Prezentacje:**
+Czekamy na propozycje!
+Wysyłajcie swoje pomysły na talks(at)prug.pl
+Prezentacje zostaną ogłoszone w pierwszej połowie kwietnia
+
+Poprzednie spotkania:
+--------------------
 **Data:** 24 marca, g. 19:00
 
 **Prezentacje:**
