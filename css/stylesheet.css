@@ -1,22 +1,224 @@
-body {
-  background: #58585A;
-  padding-top: 150px;
+* {
+  margin: 0;
+  padding: 0;
 }
 
-h1 {
+html, body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Tahoma;
+  font-size: 14px;
+  color: #58585a;
+}
+
+.wrapped {
   margin: 0 auto;
+  width: 992px;
+}
+
+#wrapper {
+  min-height: 100%;
+}
+
+#header_wrapper {
+  height: 130px;
+  background: #58585a;
+  clear: both;
+}
+
+#header_wrapper #header {
+  height: 130px;
+  background: url(../images/ruby_top.png) no-repeat right bottom;
+  overflow: hidden;
+}
+
+#header_wrapper #header h1 {
+  margin: 15px 0 0 20px;
+  padding: 0;
   width: 233px;
   height: 97px;
-  background: url(../images/logo.png);
   display: block;
-  text-indent: -9999px;
+  float: left;
 }
 
-h2 {
-  font-family: verdana;
-  color: #fff;
-  text-align: center;
+#header_wrapper #header h2 {
+  margin: 71px 0 0 25px;
+  width: 251px;
+  height: 25px;
+  background: url(../images/prug.png) no-repeat 0 0;
+  text-indent: -9999px;
+  float: left;
+}
+
+#header_wrapper #header h1 a {
+  width: 233px;
+  height: 97px;
+  background: url(../images/logo.png) no-repeat 0 0;
+  text-indent: -9999px;
+  display: block;
+}
+
+#page_wrapper {
+  padding-bottom: 150px;
+  overflow: hidden;
+  clear: both;
+}
+
+#page_body {
+  background: url(../images/sidebar.png) repeat-y 640px 0;
+  overflow: hidden;
+}
+
+#page_body #main {
+  width: 652px;
+  float: left;
+}
+
+#page_body #main #navigation {
+  clear: both;
+}
+
+#page_body #main #navigation ul {
+  list-style: none;
+}
+
+#page_body #main #navigation ul li {
+  padding: 10px 20px;
+  float: left;
+}
+
+#page_body #main #navigation ul li a {
+  font-size: 16px;
+  color: #6e6e70;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+#page_body #main #content {
+  padding: 20px 60px 60px 60px;
+  line-height: 20px;
+  clear: both;
+}
+
+#page_body #main #content h2 {
+  margin: 20px 0 0 0;
+  font-size: 16px;
+  font-weight: normal;
+  color: #000;
+  display: block;
+  clear: both;
+}
+
+#page_body #main #content ul {
+  padding: 0 0 0 40px;
+}
+
+#page_body #main #content ul li {
+  padding: 5px 0;
+}
+
+#page_body #main #content p {
+  margin: 0 0 10px 0;
+}
+
+#page_body #main #content p strong {
   font-size: 14px;
   font-weight: normal;
+  color: #000;
 }
 
+#page_body #sidebar_wrapper {
+  padding: 0 0 30px 10px;
+  overflow: hidden;
+}
+
+#page_body #sidebar_wrapper #sidebar {
+  padding-top: 65px;
+  width: 330px;
+  background: url(../images/ruby_bottom.png) no-repeat top right;
+  float: left;
+}
+
+#page_body #sidebar_wrapper #sidebar #elsewhere {
+  clear: both;
+}
+
+#page_body #sidebar_wrapper #sidebar #elsewhere h4 {
+  padding-bottom: 10px;
+  color: #000000;
+}
+
+#page_body #sidebar_wrapper #sidebar #elsewhere ul {
+  list-style: none;
+}
+
+#page_body #sidebar_wrapper #sidebar #elsewhere ul li {
+  float: left;
+}
+
+#page_body #sidebar_wrapper #sidebar #elsewhere ul li#github {
+  padding-right: 10px;
+}
+
+#page_body #sidebar_wrapper #sidebar #elsewhere ul li#github a {
+  width: 50px;
+  height: 22px;
+  background: url(../images/github.png) no-repeat 0 0;
+  text-indent: -9999px;
+  display: block;
+}
+
+#page_body #sidebar_wrapper #sidebar #elsewhere ul li#facebook a {
+  width: 81px;
+  height: 22px;
+  background: url(../images/facebook.png) no-repeat 0 0;
+  text-indent: -9999px;
+  display: block;
+}
+
+#page_body #sidebar_wrapper #sidebar #sponsors {
+  padding-top: 25px;
+  clear: both;
+}
+
+#page_body #sidebar_wrapper #sidebar #sponsors h4 {
+  padding-bottom: 10px;
+  color: #000000;
+}
+
+#page_body #sidebar_wrapper #sidebar #sponsors ul {
+  list-style: none;
+}
+
+#page_body #sidebar_wrapper #sidebar #facebook_list {
+  padding-top: 25px;
+}
+
+#footer_wrapper {
+  margin-top: -150px;
+  height: 150px;
+  background: #58585a url(../images/footer_bg.png) repeat-x 0 0;
+  clear: both;
+}
+
+#footer_wrapper #footer {
+  color: #f5f5f5;
+}
+
+#footer_wrapper #footer #credits {
+  padding: 60px 0 0 60px;
+  float: left;
+}
+
+#footer_wrapper #footer #rails {
+  margin-top: 45px;
+  width: 53px;
+  height: 68px;
+  background: url(../images/rails.png) no-repeat 0 0;
+  text-indent: -9999px;
+  float: right;
+}
