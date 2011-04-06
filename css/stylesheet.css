@@ -194,6 +194,11 @@ body {
   list-style: none;
 }
 
+#page_body #sidebar_wrapper #sidebar #github-badge {
+  padding-top: 25px;
+  clear: both;
+}
+
 #page_body #sidebar_wrapper #sidebar #facebook_list {
   padding-top: 25px;
 }
