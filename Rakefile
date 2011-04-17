@@ -4,7 +4,7 @@ require 'sass'
 
 HAML = FileList.new('**/*.haml').ext('html')
 SCSS = FileList.new('**/*.scss').ext('css')
-CLOBBER = HAML + SCSS
+CLOBBER.include HAML + SCSS
 
 rule '.html' => '.haml' do |t|
   puts "Generating #{t.name}"
