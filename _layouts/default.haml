@@ -1,0 +1,72 @@
+!!! Strict
+%html
+  %head
+    %meta{:content => "text/html; charset=utf-8", "http-equiv" => "Content-type"}
+    %meta{:content => "width = 750", :name => "viewport"}
+    %link{:charset => "utf-8", :href => "css/stylesheet.css", :rel => "stylesheet", :type => "text/css"}
+    %title {{ page.title }}
+  %body#intro
+    #wrapper
+      #header_wrapper
+        #header.wrapped{:onclick => "javascript:window.location='/'"}
+          %h1
+            %a{:href => "/"} prug.pl
+          %h2 PRUG
+      #page_wrapper
+        #page_body.wrapped
+          #main
+            #navigation
+              %ul
+                %li
+                  %a{:href => "/"} Home
+                %li
+                  %a{:href => "http://github.com/prug/prug.github.com"} Fork me on github
+            #content
+              {{ content }}
+              {% if page.comments %}
+              #disqus_thread
+              :javascript
+                var disqus_shortname = 'prug';
+                // The following are highly recommended additional parameters. Remove the slashes in front to use.
+                // var disqus_identifier = 'unique_dynamic_id_1234';
+                // var disqus_url = 'http://example.com/permalink-to-page.html';
+
+                /* * * DON'T EDIT BELOW THIS LINE * * */
+                (function() {
+                    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+                    dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+                    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+                })();
+              {% endif %}
+          #sidebar_wrapper
+            #sidebar
+              #elsewhere
+                %h4 prug elsewhere
+                %ul
+                  %li#github
+                    %a{:href => "http://github.com/prug"} Github
+                  %li#facebook
+                    %a{:href => "http://facebook.com/rubypoznan"} Facebook
+              #sponsors
+                %h4 Sponsorzy
+                %ul
+                  %li Venue: netguru
+                  %li Trunki: netguru
+              #github-badge
+              :javascript
+                GITHUB_USERNAME="prug";
+              %script{:src => "http://drnic.github.com/github-badges/dist/github-badge-launcher.js", :type => "text/javascript"}
+              #facebook_list
+                %fb:like-box{:header => "true", :href => "http://www.facebook.com/rubypoznan", :show_faces => "true", :stream => "true", :width => "330"}
+                %script{:src => "http://connect.facebook.net/pl_PL/all.js#xfbml=1"}
+    #footer_wrapper
+      #footer.wrapped
+        #credits
+          %p
+            Design by
+            %a{:href => "http://marcinklimaszewski.pl", :target => "_blank"} Marcin Klimaszewski
+          %p
+            Logo by
+            %a{:href => "http://pawelkrupski.pl", :target => "_blank"} Pan Krupski
+        #rails
+          rails

@@ -1,3 +1,5 @@
+Before you push run
+    rake
+
 TODO:
 * add members: https://github.com/api/v2/json/organizations/prug/public_members?callback=members
-* add projects: https://github.com/api/v2/json/organizations/prug/public_repositories?callback=projects
