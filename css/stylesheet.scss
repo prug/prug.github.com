@@ -238,3 +238,13 @@ body {
   text-indent: -9999px;
   float: right;
 }
+
+a.map {
+  color: #58585A;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+a.map:hover {
+  text-decoration: underline;
+}
