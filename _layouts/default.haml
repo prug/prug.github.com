@@ -4,6 +4,8 @@
     %meta{:content => "text/html; charset=utf-8", "http-equiv" => "Content-type"}
     %meta{:content => "width = 750", :name => "viewport"}
     %link{:charset => "utf-8", :href => "css/stylesheet.css", :rel => "stylesheet", :type => "text/css"}
+    %link{:href =>'http://fonts.googleapis.com/css?family=Nunito', :rel => 'stylesheet', :type => 'text/css'}
+
     %title {{ page.title }}
   %body#intro
     #wrapper
@@ -19,6 +21,8 @@
               %ul
                 %li
                   %a{:href => "/"} Home
+                %li
+                  %a{:href => "http://www.slideshare.net/polak20/search?query=prug"} SlideShare
                 %li
                   %a{:href => "http://github.com/prug/prug.github.com"} Fork me on github
             #content
@@ -41,6 +45,9 @@
           #sidebar_wrapper
             #sidebar
               #elsewhere
+                %span.nsmall.grey.awesome
+                  Przyjdź do nas, PRUG to spotkanie otwarte!
+                %hr
                 %h4 prug elsewhere
                 %ul
                   %li#github
